@@ -1,0 +1,29 @@
+body {
+        margin: 0%;
+        background-color: #5FB49C;
+}
+
+nav {
+    background-color:#98DFAF   ;
+    font-size: 24px;
+    width: 98%;
+    margin: 1%;
+    height: 70px;
+    font-family: 'Lucida Sans';
+}
+
+h1 {
+    color:#414288;
+    margin: 1%;
+}
+
+#example-relative {
+        color: lavenderblush;
+        font-family: 'Lucida Sans';
+        font-size: 24px;
+        font-weight: bold;
+        width: 98%;
+        margin: 1%;
+        height: 60px;
+        background-color: #682D63;
+}
