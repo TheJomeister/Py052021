@@ -11,7 +11,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 0px 5px 0px;
 }
 /* Upper navigation bar */
 .upnav{
@@ -23,7 +23,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 0px 5px 0px;
 }
 
 .titulo-home{
@@ -31,7 +31,7 @@ nav{
   color:white;
   font-family: 'Nunito', sans-serif;
   text-decoration: none;
-  margin: 0px 0px 0px 20px;
+  margin: 0px 20px 0px 20px;
 }
 
 .parrafos-home{
@@ -75,7 +75,7 @@ body, html {
   background-color: #001427;
   border: none; /* Remove borders */
   color: white; /* White text */
-  padding: 5px 6px; /* Some padding */
+  padding: 0px 20px; /* Some padding */
   height: 18px;
   font-size: 18px; /* Set a font size */
   font-family: 'Nunito', sans-serif;
@@ -110,5 +110,5 @@ body, html {
   font-family: "nunito", sans-serif;
   text-decoration: none;
   font-size: 18px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 0px;
 }
