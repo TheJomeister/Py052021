@@ -1,17 +1,22 @@
+/* Places The hero image */
 body{
-    margin: 0;
+  display: grid;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background: var(--clr-neutral-100);
+  text-decoration: none;
 }
 /* Navigation bar */
 nav{
     background: #001427;
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
     width: 100%;
-    height: 24px;
+    height: 25px;
     display: flex;
     justify-content: space-between;
+    position: sticky; top: 0;
 }
-/* Upper navigation bar */
+/* header */
 .upnav{
   background: white;
   font-size: 18px;
@@ -22,37 +27,45 @@ nav{
   justify-content: space-between;
   padding: 3px 0px 3px 0px;
 }
-.titulo-home{
-  font-size: 18px;
-  color:white;
+.button {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 0px 20px; /* Some padding */
   font-family: 'Nunito', sans-serif;
+  cursor: pointer; /* Mouse pointer on hover */
   text-decoration: none;
-  margin: 0px 20px 0px 20px;
 }
-.parrafos-home{
-    font-size: 18px;
-    color: whitesmoke;
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    margin: 0px 20px 0px 20px;
+.media-button{
+  background-color: white;
+  border: none; /* Remove borders */
+  color: var(--clr-neutral-900);
+  padding: 5px 20px 0px 0px; /* Some padding */
+  height: 18px;
+  font-size: 18px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
 }
-/* Places The hero image */
-body, html {
-    height: 100%;
+.media-button:hover{
+  opacity: 0.4 #f18805;
+}
+.button:hover {
+  box-shadow: inset 0px -80px 0px 0px #f18805;
+}
+/* Select colors for the whole page */
+:root{
+  --clr-neutral-900: #001427;
+  --clr-neutral-100: white;
+  --clr-neutral-400: #f18805; 
 }
 /* The hero image */
 .hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.ytimg.com/vi/aqyLTRS4GoY/maxresdefault.jpg");
-
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
   /* Set a specific height */
   height: 70vh;
-
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 /* Place text in the middle of the image */
 .hero-text {
@@ -61,65 +74,130 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-family: "Nunito", sans-serif;
-  font-weight: lighter;
+  color: var(--clr-neutral-100);
 }
-.button {
-  background-color: #001427;
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 0px 20px; /* Some padding */
-  height: 18px;
-  font-size: 18px; /* Set a font size */
-  font-family: 'Nunito', sans-serif;
-  cursor: pointer; /* Mouse pointer on hover */
-  text-decoration: none;
-}
-.white-button{
-  background-color: white;
-  border: none; /* Remove borders */
-  color: black; /* White text */
-  padding: 5px 20px 0px 0px; /* Some padding */
-  height: 18px;
-  font-size: 18px; /* Set a font size */
-  font-family: 'Nunito', sans-serif;
-  cursor: pointer; /* Mouse pointer on hover */
-  text-decoration: none;
-}
-.button:hover {
-  box-shadow: inset 0px -80px 0px 0px #f18805;
-  }
-
-.navtxt
-{
-  font-family: "nunito", sans-serif;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 0px 0px 0px 0px;
-}
+/* flexbox container */
 .flex-container{
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  padding: 30px 30px 30px 30px;
+  justify-content:space-evenly;
+  align-content: space-around;
+  padding: 10px;
 }
-.card {
-  display: flex;
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  flex-direction: column;
-  padding: 0 30px 0 0;
+/* Cards begin */
+.card_1{
+  color: var(--clr-neutral-900);
+  background-image: url("../images/Proyectos/Bimbo\ Mazatlan.jpg");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 30ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 0px 0 rgba(0,0,0,0.2);
+.card_2{
+  color: var(--clr-neutral-900);
+  background-image: url("../images/Proyectos/Chedraui\ Santa\ Fé\ \(2\).JPG");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 30ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
+.card_3{
+  color: var(--clr-neutral-900);
+  background-image: url("../images/Proyectos/Chedraui\ San\ José\ del\ Cabo.JPG");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 30ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card_4{
+  color: var(--clr-neutral-900);
+  background-image: url("../images/Proyectos/Empresalia.JPG");
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 30ch;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+}
+.card-content{
+  --padding: 1.5rem;
+  padding: var(--padding);
+  text-decoration: none;
+  color: var(--clr-neutral-100);
+  background: linear-gradient(
+    hsl(10 0% 0% /0),
+    hsl(20 0% 0% /0.9),
+    hsl(0 0% 0% /1)
+  );
+}
+.card-title {
+  position: relative;
+  width: max-content;
+}
+.card-title::after{
+  content:"";
+  position:absolute;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: greenyellow;
+  transform: scaleX(0);
 
-/* Add some padding inside the card container */
-.content {
-  display: flex;
-  justify-content: center;
-  font-family: 'Nunito', sans-serif;
+  transition: transform 500ms ease;
+}
+/* Make the button used for cards */
+.card-button{
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: greenyellow;
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+.card-button:hover{
+  box-shadow: inset 0px -80px 0px 0px rgb(13, 216, 13);
+}
+/* Cards animations */
+.card_1:hover{
+  transform: scale(1.05);
+}
+.card_1:hover .card-title::after{
+  transform: scaleX(1);
+}
+.card_2:hover{
+  transform: scale(1.05);
+}
+.card_2:hover .card-title::after{
+  transform: scaleX(1);
+}
+.card_3:hover{
+  transform: scale(1.05);
+}
+.card_3:hover .card-title::after{
+  transform: scaleX(1);
+}
+.card_4:hover{
+  transform: scale(1.05);
+}
+.card_4:hover .card-title::after{
+  transform: scaleX(1);
+}
+/* Grid container */
+.grid-container{
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 5px 5px; 
+  grid-template-areas: 
+    ". . . ."
+    ". . . ."; 
+  padding: 50px 45px 0px 45px;
 }
